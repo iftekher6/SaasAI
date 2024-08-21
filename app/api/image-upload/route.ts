@@ -8,8 +8,8 @@ import { PrismaClient } from '@prisma/client';
     // Configuration
     cloudinary.config({ 
         cloud_name: process.env.CLOUD_NAME, 
-        api_key: '416841867964521', 
-        api_secret: '<your_api_secret>' // Click 'View API Keys' above to copy your API secret
+        api_key: process.env.API_KEY, 
+        api_secret: process.env.API_SECRET // Click 'View API Keys' above to copy your API secret
     });
 
 
